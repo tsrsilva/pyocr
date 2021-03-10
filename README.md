@@ -1,2 +1,2 @@
 # pyocr
-A python script for optical character recognition
+A python script for optical character recognition.
