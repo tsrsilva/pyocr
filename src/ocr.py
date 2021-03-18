@@ -1,5 +1,5 @@
 import cv2
-# import os
+import os
 
 # preprocessing modules
 # import numpy as np
@@ -15,12 +15,16 @@ import pytesseract
 #    n = cv2.imread(img)
 #    cv_img.append(n)
 
+# detect the current working directory and print it
+path = os.getcwd()
+print("The current working directory is %s" % path)
+input("Press enter to continue...")
+
 # load test image
 image = cv2.imread('..output/test.jpg')
 
 # Adding custom options
-custom_config = r'--oem 3 --psm 6'
-pytesseract.image_to_string(image, config=custom_config)
+pytesseract.image_to_string('image')
 
 
 # Get grayscale image
