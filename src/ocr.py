@@ -16,7 +16,7 @@ import pytesseract
 #    cv_img.append(n)
 
 # load test image
-img = cv2.imread('..output/test.jpg')
+image = cv2.imread('..output/test.jpg')
 
 # Get grayscale image
 
@@ -26,4 +26,4 @@ def get_grayscale(image):
     return cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 
-image.show("img")
+image.show("image")
