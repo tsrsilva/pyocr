@@ -9,6 +9,9 @@ import os
 # ocr modules
 import pytesseract
 
+# specify where tesseract is installed
+pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
+
 # load images
 # cv_img = []
 # for img in glob.glob('../output/*.jpg'):
@@ -21,7 +24,8 @@ print("The current working directory is %s" % path)
 input("Press enter to continue...")
 
 # load test image
-image = cv2.imread('..output/test.jpg')
+image_location = 'C:/Users/User/github/pyocr/output/test.jpg'
+image = cv2.imread(image_location)
 
 # Adding custom options
 pytesseract.image_to_string('image')
