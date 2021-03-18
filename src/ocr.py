@@ -1,10 +1,10 @@
 import cv2
-import os
+# import os
 
 # preprocessing modules
-import numpy as np
-from PIL import Image
-import glob
+# import numpy as np
+# from PIL import Image
+# import glob
 
 # ocr modules
 import pytesseract
